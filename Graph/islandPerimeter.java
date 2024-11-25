@@ -1,4 +1,7 @@
-// solved using DFS
+/*********************************************** Java **************************************************/
+//Approach-1 (DFS)
+//T.C : O(m*n)
+//S.C : O(1) Auxiliary Space
 class Solution {
     public int dfs(int[][] grid, int i, int j, int row,int col){
       
@@ -29,10 +32,10 @@ class Solution {
         int row = grid.length;
         int col = grid[0].length;
         int perimeter = 0;
-        // lets traverse in the 2d matrix
+        //let's traverse in the 2d matrix
         for(int i = 0; i<row; i++){
             for(int j = 0; j<col;j++){
-                // when i found the land cell , i will traverse further
+                // when i find the land cell, i will traverse further
                 if(grid[i][j] == 1) {
                     perimeter =  dfs(grid, i, j,row,col);
                 }
@@ -41,4 +44,10 @@ class Solution {
         }
         return perimeter;
     }
+
+
 }
+
+//Approach-2 (BFS)
+//T.C : O(m*n)
+//S.C : O(m*n)
