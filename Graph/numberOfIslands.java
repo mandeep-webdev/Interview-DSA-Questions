@@ -1,6 +1,6 @@
 //------------------------------DFS Approach------------------------------
 // TC -- O(m*n)
-// SC --- O(1)
+// SC --- O(m*n) due to recursive call stack
 class Solution {
     public void dfs(char[][] grid, int i, int j, int m, int n){
         // return if goes out of bound index or if it is water node
