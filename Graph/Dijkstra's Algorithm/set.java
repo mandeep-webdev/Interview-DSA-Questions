@@ -1,3 +1,14 @@
+/*
+class iPair {
+    int first, second;
+
+    iPair(int first, int second) {
+        this.fist = first;
+        this.second = second;
+    }
+}
+*/
+
 class Solution {
     
     ArrayList<Integer> dijkstra(ArrayList<ArrayList<iPair>> adj, int src) {
