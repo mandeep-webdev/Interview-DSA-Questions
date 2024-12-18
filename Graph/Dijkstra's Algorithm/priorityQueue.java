@@ -1,3 +1,11 @@
+//TC --  O(E * log V)
+//SC -- O(V + E)
+
+// Q-- Why priority queue instead of queue ---------- 
+//Ans is via Priority Queue we are greedily exploring the shortest distance first (because the shortest distance is always at the top of the priority queue)
+//and fill up the distance list with the shortest distance while using a queue we are exploring all the possible ways 
+//to find the shortest distance, which is time-consuming.
+
 /*
 class iPair {
     int first, second;
