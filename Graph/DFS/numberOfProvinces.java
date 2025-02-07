@@ -1,3 +1,5 @@
+// TC --   outer loop O(n) + dfs for n nodes O(V+E) == O(N)
+// SC --  visited array + stack space O(n) 
 class Solution {
     public static void dfs(int node,int[] visited,ArrayList<ArrayList<Integer>> adj){
         visited[node] = 1;
@@ -16,7 +18,7 @@ class Solution {
         // Convert adjacency matrix to adjacency list
         for (int i = 0; i < V; i++) {
             for (int j = 0; j < V; j++) {
-                if (adj.get(i).get(j) == 1) { // Check if edge exists
+                if (adj.get(i).get(j) == 1 && i != j) { // Check if edge exists and not a self node
                     adjList.get(i).add(j);
                     adjList.get(j).add(i);
                 }
